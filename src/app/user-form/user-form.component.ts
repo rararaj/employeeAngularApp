@@ -12,18 +12,14 @@ export class UserFormComponent {
 
   user: User;
 
-  constructor(
-    private route: ActivatedRoute,
-      private router: Router,
-        private userService: UserService) {
+  constructor(private router: Router) {
     this.user = new User();
   }
 
   onSubmit() {
-    this.userService.save(this.user).subscribe(res => this.gotoUserList());
+    //TODO: Call the userService to save the user data and then navigate to the userListComponent
   }
 
-  gotoUserList() {
-    this.router.navigate(['/users']);
-  }
+
+
 }

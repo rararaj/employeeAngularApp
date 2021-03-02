@@ -5,7 +5,7 @@ import { UserFormComponent } from './user-form/user-form.component';
 
 const routes: Routes = [
   { path: 'users', component: UserListComponent },
-  { path: 'adduser', component: UserFormComponent }
+  //TODO: Add the missing route
 ];
 
 @NgModule({

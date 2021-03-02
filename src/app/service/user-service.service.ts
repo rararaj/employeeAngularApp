@@ -8,15 +8,15 @@ export class UserService {
 
   private usersUrl: string;
 
-  constructor(private http: HttpClient) {
-    this.usersUrl = 'http://localhost:8080/users';
+  constructor() {
+
   }
 
-  public findAll(): Observable<User[]> {
-    return this.http.get<User[]>(this.usersUrl);
+  public findAll() {
+    //TODO: Add the call to the backend endpoint for retrieving the list of users
   }
 
   public save(user: User) {
-    return this.http.post<User>(this.usersUrl, user);
+    //TODO: Add the call to the backend endpoint for adding new user
   }
 }
